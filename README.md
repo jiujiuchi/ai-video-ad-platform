@@ -74,7 +74,11 @@ npm run dev
 
 ## Live Demo
 
-https://ai-video-ad-platform-five.vercel.app
+[https://ai-video-ad-platform-five.vercel.app](https://ai-video-ad-platform-five.vercel.app)
+
+## GitHub
+
+[https://github.com/jiujiuchi/ai-video-ad-platform](https://github.com/jiujiuchi/ai-video-ad-platform)
 
 ---
 
