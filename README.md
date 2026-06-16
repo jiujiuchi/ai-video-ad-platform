@@ -74,7 +74,7 @@ npm run dev
 
 ## Live Demo
 
-[Vercel URL — 部署后替换]
+https://ai-video-ad-platform-five.vercel.app
 
 ---
 

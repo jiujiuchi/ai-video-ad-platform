@@ -7,11 +7,11 @@ import { Download, Copy, Play, RotateCcw } from "lucide-react";
 import QualityScoreCard from "@/components/QualityScoreCard";
 import { mockQualityScores } from "@/data/mock";
 
-// Using public domain sample videos for demo
+// Public domain sample videos for demo — each tab shows a different motion style variant
 const demoVideos = [
   "https://www.w3schools.com/html/mov_bbb.mp4",
   "https://www.w3schools.com/html/movie.mp4",
-  "https://www.w3schools.com/html/mov_bbb.mp4",
+  "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
 ];
 
 export default function ResultPage() {

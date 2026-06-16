@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { Upload, X, AlertCircle, CheckCircle2, Image as ImageIcon } from "lucide-react";
+import { Upload, X, AlertCircle, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface AISuggestion {
@@ -19,8 +19,6 @@ interface ImageUploaderProps {
 
 const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp", "image/bmp"];
 const MAX_SIZE = 20 * 1024 * 1024; // 20MB
-const MIN_WIDTH = 400;
-const MIN_HEIGHT = 300;
 
 function analyzeImage(file: File): Promise<AISuggestion> {
   return new Promise((resolve) => {
@@ -30,13 +28,6 @@ function analyzeImage(file: File): Promise<AISuggestion> {
       URL.revokeObjectURL(img.src);
       const ratio = img.width / img.height;
       const isSquare = ratio > 0.8 && ratio < 1.25;
-
-      const categories: Record<string, string[]> = {
-        "3C数码": ["black", "dark", "tech", "screen", "metal"],
-        "美妆护肤": ["pink", "gold", "glossy", "bottle", "cream"],
-        "服装鞋帽": ["fabric", "model", "white bg", "wear"],
-        "食品饮料": ["food", "red", "yellow", "fresh", "plate"],
-      };
 
       // Simulated AI analysis — in production this would call a vision model
       setTimeout(() => {

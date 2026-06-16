@@ -20,12 +20,6 @@ function scoreColor(score: number): string {
   return "text-red-500";
 }
 
-function scoreBg(score: number): string {
-  if (score >= 90) return "bg-success/10";
-  if (score >= 70) return "bg-warning/10";
-  return "bg-red-50";
-}
-
 export default function QualityScoreCard({ scores }: QualityScoreCardProps) {
   const statusConfig = {
     ready: { icon: CheckCircle2, label: "可投放", bg: "bg-success/10", text: "text-success" },
